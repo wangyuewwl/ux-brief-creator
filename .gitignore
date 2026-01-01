@@ -26,7 +26,9 @@ Temporary Items
 .vscode/
 .kiro/
 
-# Output files (optional - remove if you want to track generated briefs)
+# Input and Output folder contents (keep folders but exclude files)
+Input/*
+!Input/.gitkeep
 Output/*
 !Output/.gitkeep
 
