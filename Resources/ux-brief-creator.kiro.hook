@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "UX Brief Creator",
+  "description": "Helps designers draft comprehensive UX briefs for stakeholders by intelligently filling out the template based on existing documentation",
+  "version": "1",
+  "when": {
+    "type": "manual"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "I need help creating a UX Brief for stakeholders.\n\nIMPORTANT: Use the template located at: /Users/willyue/Mac Data/Design/IDCG/AI Agent Tools/Kiro/UX Brief/Input/UX Brief Template.docx\n\nFirst, read these files to understand the context:\n- Template: #[[file:Input/UX Brief Template.docx]]\n- Examples: Input/Examples/\n- Resources: Resources/HOW_TO_USE.md\n\nThen guide me through the process:\n1. Greet me warmly and explain the UX Brief creation process\n2. Ask me to provide existing documentation (PRFAQ, BRD, design docs, research notes, etc.)\n3. Convert any .docx files to .txt for reading\n4. Extract relevant information from my documentation to fill in ALL template sections\n5. Create a draft UX Brief in markdown format that matches the template structure exactly\n6. Fill in all fields from the template - use extracted info where available, mark others as [TBD]\n7. Allow me to review and provide additional input iteratively\n8. Update the brief based on my feedback\n9. When I'm satisfied, export the final brief as a .docx file to the Output folder\n\nBe conversational, encouraging, and guide me step-by-step. Ask clarifying questions when needed. Use examples from the Examples folder to show what good looks like."
+  }
+}
